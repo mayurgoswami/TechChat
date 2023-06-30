@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="ic_launcher.png" type="image/x-icon">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: consolas;
+            transition: all 0.3s;
+        }
+
+        body {
+            height: 100vh;
+            width: -webkit-fill-available;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cointainer {
+            margin: 5vh;
+            box-shadow: 0 0 10px 0.2rem rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 50px;
+            border-radius: 5px;
+        }
+
+        .logo {
+            height: 100px;
+            display: flex;
+            overflow: hidden;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 50%;
+            margin: 10px;
+        }
+
+        .app_icon {
+            height: 100px;
+            width: 100px;
+        }
+        
+        .value, .label {
+            text-align: center;
+            width: 120px;
+            height: 40px;
+        }
+
+        .label {
+            text-align: start;
+        }
+
+        .value {
+            text-align: end;
+        }
+
+        .border_less {
+            border: none;
+            outline: none;
+            font-size: 20px;
+        }
+
+        .btn {
+            padding: 7px;
+            background-color: #007bff;
+            border-radius: 3px;
+            text-decoration: none;
+            font-size: 15px;
+            color: #ffffff;
+            border-color: #007bff;
+            margin-top: 30px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: transparent;
+            color: #007bff;
+            box-shadow: 0 0 0 0.2rem #007bffaa;
+        }
+
+        @media (max-width: 768px) {
+            .cointainer {
+                margin: 0;
+            }
+        }
+    </style>
+    <title>TechChat</title>
+</head>
+
+<body>
+    <div class="cointainer">
+        <div class="logo">
+            <img src="ic_launcher.png" alt="App_Icon" class="app_icon">
+        </div>
+        <table class="table-info border_less">
+            <tr class="border_less">
+                <td class="border_less label">Name: </td>
+                <td class="border_less value">TechChat</td>
+            </tr>
+            <tr class="border_less">
+                <td class="border_less label">Version: </td>
+                <td class="border_less value">v1.1.0</td>
+            </tr>
+            <tr class="border_less">
+                <td class="border_less label">Size: </td>
+                <td class="border_less value">7.01 MB</td>
+            </tr>
+            <tr class="border_less">
+                <td class="border_less label">Developers: </td>
+                <td class="border_less value">FlareForge & Team</td>
+            </tr>
+        </table>
+        <a class="btn" href="TechChat-v1.1.0.apk">Download</a>
+    </div>
+</body>
+
+</html>
